@@ -86,18 +86,19 @@ setSearch(e.target.value)
   </div>
 
   {/* Category Buttons */}
-  <div className="flex flex-wrap justify-center gap-4 my-6 px-4">
-    {['Sports', 'Fitness', 'Movies', 'Politics', 'Entertainment'].map((category) => (
-      <button
-        key={category}
-        onClick={userinput}
-        value={category.toLowerCase()}
-        className="px-5 py-2 rounded-full bg-blue-600 text-white text-base hover:bg-blue-700 active:scale-95 transition-transform"
-      >
-        {category}
-      </button>
-    ))}
-  </div>
+ <div className="flex flex-wrap justify-center gap-4 my-8 px-6">
+  {['Sports', 'Fitness', 'Movies', 'Politics', 'Entertainment'].map((category) => (
+    <button
+      key={category}
+      onClick={userinput}
+      value={category.toLowerCase()}
+      className="px-6 py-2.5 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium shadow-md hover:from-blue-600 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-300 active:scale-95 transition-all duration-200"
+    >
+      {category}
+    </button>
+  ))}
+</div>
+
 
   {/* News Section */}
   <div className="px-4 pb-10">
